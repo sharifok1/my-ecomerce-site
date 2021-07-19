@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="basic-needs/css/style.css">
 </head>
 <body>
-    <nav>
+    <nav class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -20,10 +20,10 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link" href="#">Shoes</a>
-                      <a class="nav-link" href="#">Backpack</a>
-                      <a class="nav-link" href="#">Subscribe</a>
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      <a class="nav-link" href="#shoes">Shoes</a>
+                      <a class="nav-link" href="#Backpack">Backpack</a>
+                      <a class="nav-link" href="#subscriber">Subscribe</a>
                     </div>
                   </div>
                 </div>
@@ -32,8 +32,8 @@
     </nav>
 <!-- =====================================slider project
 =================================================================================== -->
-    <header>
-       <section class="slider">
+    <header id="home">
+       <section class="slider" >
         <div class="container my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -47,7 +47,7 @@
                              
                           </div>
                           <div class="align-self-center col- col-lg-5"> 
-                              <img class="img-fluid pb-3" src="images/banner-images/tv.png" style="max-width:60%">
+                              <img class="img-fluid pb-3 ps-5" src="images/banner-images/tv.png" style="max-width:60%">
                             </div>
                       </div>
                    </div>
@@ -61,7 +61,7 @@
                              
                           </div>
                           <div class="align-self-center col- col-lg-5"> 
-                              <img class="img-fluid pb-3" src="images/banner-images/headphone.png" style="max-width:70%">
+                              <img class="img-fluid pb-3 ps-5" src="images/banner-images/headphone.png" style="max-width:70%">
                             </div>
                       </div>
                    </div>
@@ -76,7 +76,7 @@
                              
                           </div>
                           <div class="align-self-center col- col-lg-5"> 
-                              <img class="img-fluid pb-3" src="images/banner-images/xbox.png" style="max-width:70%">
+                              <img class="img-fluid pb-3 ps-5" src="images/banner-images/xbox.png" style="max-width:70%">
                             </div>
                       </div>
                    </div>
@@ -102,22 +102,22 @@
     <section >
         <div class="container">
             <div class="row">
-              <div class="my-2 col col-md-12 col-lg-4">
+              <div class="my-2 col- col-md-12 col-lg-4">
                <div class="my-2 d-flex align-items-center justify-content-between rounded bg-success p-2"> 
-                   <img src="images/categories/shoes.png"  alt="">
-                <h1 class="pe-2 text-light">Shoes</h1>
+                   <img src="images/categories/shoes.png" style="max-height: 100px;" alt="">
+                <h1 class="pe-4 text-light">Shoes</h1>
             </div>
               </div>
-              <div class="my-2 col col-md-12 col-lg-4">
+              <div class="my-2 col- col-md-12 col-lg-4">
                <div class="my-2 d-flex align-items-center justify-content-between rounded bg-danger p-2">
-                <img src="images/categories/bag.png"  alt="">
-                <h1 class="pe-2 text-light">Bag</h1>
+                <img src="images/categories/bag.png"  style="max-height: 100px;" alt="">
+                <h1 class="pe-4 text-light">Bag</h1>
                </div>
               </div>
-              <div class="my-2 col col-md-12 col-lg-4">
+              <div class="my-2 col- col-md-12 col-lg-4">
                 <div class="my-2 d-flex align-items-center justify-content-between rounded bg-warning p-2">
-                    <img src="images/categories/watch.png"  alt="">
-                    <h1 class="pe-2 text-light">Watch</h1>
+                    <img src="images/categories/watch.png" style="max-height: 100px;" alt="">
+                    <h1 class="pe-4 text-light">Watch</h1>
                   </div>
               </div>
             </div>
@@ -128,7 +128,8 @@
     =========================================================================== -->
     <section>
         <div class="container my-5">
-            <div class="row">
+            <div class="row" id="shoes">
+                <h1>Shoes</h1>
                 <div class="col  col-lg-4 col-md-4">
                     <div class="card shadow p-3 mb-5 bg-body rounded" style="">
                         <img src="images/shoes/shoe-1.png" class="" alt="...">
@@ -163,7 +164,8 @@
                       </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="Backpack">
+                <h1>Backpack</h1>
                 <div class="col col-lg-4 col-md-4">
                     <div class="card shadow p-3 mb-5 bg-body rounded" style="">
                         <img src="images/bags/bag-1.png" class="" alt="...">
@@ -202,10 +204,10 @@
             
         </div>
     </section>
-<!--======================================== footerrrr 
+<!--======================================== subscriber
 =======================================================================-->
-    <footer>
-        <div class="container">
+    <section>
+        <div class="container" id="subscriber">
             <div class="subscriber d-flex justify-content-center align-items-center p-5" style="background-color:#FEEAE9">
                 <div>
                     <h1>LET'S STAY IN TOUCH</h1>
@@ -217,8 +219,13 @@
            
         </div>
 
-    </footer>
+    </section>
 
+    <!-- =================footer
+    ======================================= -->
+    <footer class="text-center my-5">
+        <p>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+    </footer>
 
 
     <script src="basic-needs/js/bootstrap.bundle.min.js"></script>
